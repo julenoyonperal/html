@@ -1,0 +1,53 @@
+<!-- Este codigo esta bien para mostrar cosas;
+seguir trabajando con este-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/JavaScript">
+        function myFunction(id) {
+            var test;
+            test = document.getElementById(id).value;
+            alert(test);
+            document.getElementById("demo").innerHTML = "The value of the value attribute was changed. Try to submit the form again.";
+        }
+
+         function print_text() {
+            var  kuku = document.getElementById("demo").value;
+            document.getElementById("demo_final").innerHTML = [kuku, kuku];
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h2>JavaScript in Body</h2>
+
+
+    <!-- <button type="button" onclick="myFunction()">Try it</button> -->
+
+    </br></br>
+    <input type="Checkbox" id="demo" onClick="myFunction(this.id);" Value="goku">Btn
+    <input type="Checkbox" id="demo2" onClick="myFunction(this.id);" Value="goku2">Btn2
+    </br></br>
+
+    <INPUT TYPE="Checkbox" id="demo4" onclick="myFunction(this.id);" Value="Opera "> Opera
+    <INPUT TYPE="Checkbox" id="demo4" onclick="myFunction(this.id);" Value="Firefox2">Firefox2
+    <INPUT TYPE="Checkbox" id="demo4" onclick="myFunction(this.id);" Value="Opera "> Opera3
+
+    </br></br>
+
+    <INPUT TYPE="Checkbox" id="demo1" onclick="myFunction()" Value="Firefox"> Firefox
+    <INPUT TYPE="Checkbox" id="demo1" onclick="myFunction()" Value="Opera "> Opera
+    <INPUT TYPE="Checkbox" id="demo1" onclick="myFunction()" Value="Firefox2">Firefox2
+    <INPUT TYPE="Checkbox" id="demo1" onclick="myFunction()" Value="Opera "> Opera3
+
+
+    <p id="demo_final">A Paragraph</p>
+    <button type="button" onclick="print_text()">Try it</button>
+
+</body>
+
+</html>
