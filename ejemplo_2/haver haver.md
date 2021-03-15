@@ -1,2 +1,0 @@
-haver haver
-mirar l
